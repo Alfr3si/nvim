@@ -10,13 +10,14 @@ paso #3 una vez hecho todo esto puedes copiar este repositorio
 
 paso #4 ejecuta nvim y dentro ejecuta :PackerSync ,esto comenzara con la instalacion de los plugins .
 
-requerimientos:
 
-nvim
+--requerimientos:
 
-packer.nvim
+-nvim
 
-NerdFonts
+-packer.nvim
 
-![nvim.png](https://raw.githubusercontent.com/Alfr3si/repositorio/main/nvim.png) 
+-NerdFonts
+
+![nvim](https://raw.githubusercontent.com/Alfr3si/repositorio/main/nvim.png) 
 
