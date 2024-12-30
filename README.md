@@ -19,5 +19,5 @@ paso #4 ejecuta nvim y dentro ejecuta :PackerSync ,esto comenzara con la instala
 
 -NerdFonts
 
-![nvim](https://raw.githubusercontent.com/Alfr3si/repositorio/main/nvim.png) 
+![nvim](https://raw.githubusercontent.com/Alfr3si/nvim/main/nvim.png) 
 
