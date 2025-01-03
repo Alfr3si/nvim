@@ -1,3 +1,4 @@
+
 -- keymaps.lua
 
 -- Teclas desactivadas :(
@@ -106,9 +107,9 @@ vim.api.nvim_set_keymap('n', 'z', 'b', { noremap = true, silent = true })
 --Ir al final de la palabra actual
 vim.api.nvim_set_keymap('n', 'x', 'e', { noremap = true, silent = true })
 --Ir al siguiente parrafo
-vim.api.nvim_set_keymap('n', '}', '}', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', ']', '}', { noremap = true, silent = true })
 --Ir al parrafo anterior
-vim.api.nvim_set_keymap('n', '{', '{', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '[', '{', { noremap = true, silent = true })
 --Ir a media pantalla abajo
 vim.api.nvim_set_keymap('n', '<C-d>', '<C-d>', { noremap = true, silent = true })
 --Ir a media pantalla arriba
@@ -148,5 +149,4 @@ vim.api.nvim_set_keymap('v', '{', '{', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('i', '<C-e>', '<Esc>$i', { noremap = true, silent = true })
 --Mover al inicio de la linea en modo i
 vim.api.nvim_set_keymap('i', '<C-a>', '<Esc>0i', { noremap = true, silent = true })
-
 

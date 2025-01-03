@@ -7,3 +7,6 @@ require'nvim-tree'.setup {
     side = 'left',
   },
 }
+
+-- separador de color gris medio
+vim.cmd("highlight WinSeparator guibg=None guifg=#808080") -- Gris medio
