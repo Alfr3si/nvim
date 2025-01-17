@@ -49,15 +49,16 @@ require('gitsigns').setup {
   }
 }
 
--- Definir los colores de los signos con colores más suaves de la paleta Nord
-vim.api.nvim_set_hl(0, 'GitSignsAdd', { fg = '#A3BE8C' })           -- Verde claro (Nord 7)
-vim.api.nvim_set_hl(0, 'GitSignsChange', { fg = '#EBCB8B' })        -- Amarillo claro (Nord 8)
-vim.api.nvim_set_hl(0, 'GitSignsDelete', { fg = '#BF616A' })        -- Rojo claro (Nord 9)
-vim.api.nvim_set_hl(0, 'GitSignsChangeDelete', { fg = '#D08770' })  -- Naranja claro (Nord 11)
-vim.api.nvim_set_hl(0, 'GitSignsUntracked', { fg = '#8FBCBB' })     -- Azul claro (Nord 6)
 
-vim.api.nvim_set_hl(0, 'GitSignsStagedAdd', { fg = '#A3BE8C' })      -- Verde claro (Nord 7)
-vim.api.nvim_set_hl(0, 'GitSignsStagedChange', { fg = '#EBCB8B' })   -- Amarillo claro (Nord 8)
-vim.api.nvim_set_hl(0, 'GitSignsStagedDelete', { fg = '#BF616A' })   -- Rojo claro (Nord 9)
-vim.api.nvim_set_hl(0, 'GitSignsStagedChangeDelete', { fg = '#D08770' }) -- Naranja claro (Nord 11)
-vim.api.nvim_set_hl(0, 'GitSignsStagedUntracked', { fg = '#8FBCBB' }) -- Azul claro (Nord 6)
+-- Definir los colores de los signos con la paleta personalizada
+vim.api.nvim_set_hl(0, 'GitSignsAdd', { fg = '#50FA7B' })           -- Verde claro
+vim.api.nvim_set_hl(0, 'GitSignsChange', { fg = '#F1FA8C' })        -- Amarillo claro
+vim.api.nvim_set_hl(0, 'GitSignsDelete', { fg = '#FF5555' })        -- Rojo claro
+vim.api.nvim_set_hl(0, 'GitSignsChangeDelete', { fg = '#FF79C6' })  -- Rosa
+vim.api.nvim_set_hl(0, 'GitSignsUntracked', { fg = '#8BE9FD' })     -- Azul claro
+
+vim.api.nvim_set_hl(0, 'GitSignsStagedAdd', { fg = '#69FF94' })      -- Verde más claro
+vim.api.nvim_set_hl(0, 'GitSignsStagedChange', { fg = '#FFFFA5' })   -- Amarillo más claro
+vim.api.nvim_set_hl(0, 'GitSignsStagedDelete', { fg = '#FF6E6E' })   -- Rojo más claro
+vim.api.nvim_set_hl(0, 'GitSignsStagedChangeDelete', { fg = '#FF92D0' }) -- Rosa más claro
+vim.api.nvim_set_hl(0, 'GitSignsStagedUntracked', { fg = '#A4FFFF' }) -- Azul más claro
