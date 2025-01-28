@@ -1,44 +1,59 @@
 
 -- plugins.lua
 
--- Configura Packer
-return require('packer').startup(function(use)
-  -- Packer puede gestionarse a sí mismo
-  use 'wbthomason/packer.nvim'
+-- Asegúrate de que Lazy.nvim esté instalado
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not vim.loop.fs_stat(lazypath) then
+  vim.fn.system({
+    "git",
+    "clone",
+    "--filter=blob:none",
+    "https://github.com/folke/lazy.nvim.git",
+    "--branch=stable", -- Usa la rama estable
+    lazypath,
+  })
+end
+vim.opt.rtp:prepend(lazypath)
+
+-- Configura Lazy.nvim con los plugins
+require("lazy").setup({
+  -- Lazy.nvim puede gestionarse a sí mismo
+  { "folke/lazy.nvim" },
 
   -- Plugin dashboard
-  use 'glepnir/dashboard-nvim'
+  { "glepnir/dashboard-nvim" },
 
   -- Plugin de transparencia
-  use 'xiyaowong/transparent.nvim'
+  { "xiyaowong/transparent.nvim" },
 
   -- Plugin para tabline
-  use 'kdheepak/tabline.nvim'
+  { "kdheepak/tabline.nvim" },
 
   -- Status Bar
-  use 'nvim-lualine/lualine.nvim'
-  use 'nvim-tree/nvim-web-devicons'  -- Para los iconos
+  { "nvim-lualine/lualine.nvim" },
+  { "nvim-tree/nvim-web-devicons" }, -- Para los iconos
 
   -- IDE >> plugin de tree
-  use 'kyazdani42/nvim-tree.lua'
+  { "kyazdani42/nvim-tree.lua" },
 
-  -- Asegúrate de tener esta línea dentro de la sección de plugins en tu archivo init.lua
-  use 'windwp/nvim-autopairs'
+  -- Autopares para el cierre automático de corchetes y paréntesis
+  { "windwp/nvim-autopairs" },
 
   -- Autocompletado para lenguajes de programación
-  use {'neoclide/coc.nvim', branch = 'release'}
+  { "neoclide/coc.nvim", branch = "release" },
 
   -- Telescope para búsqueda
-  use 'nvim-telescope/telescope.nvim'
-  use 'nvim-lua/plenary.nvim'  -- Requerido por telescope
+  {
+    "nvim-telescope/telescope.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+  },
 
   -- Agregar el plugin de file browser para telescope
-  use 'nvim-telescope/telescope-file-browser.nvim'
+  { "nvim-telescope/telescope-file-browser.nvim" },
 
   -- Agregar plugin para trabajar con git (ver commits, cambios, etc.)
-  use 'tpope/vim-fugitive'
+  { "tpope/vim-fugitive" },
 
   -- Muestra cambios en el archivo actual (líneas eliminadas, agregadas, etc.)
-  use 'lewis6991/gitsigns.nvim'
-
-end)
+  { "lewis6991/gitsigns.nvim" },
+})

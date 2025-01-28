@@ -6,5 +6,10 @@
       "trace.server": "verbose",
       "filetypes": ["go"]
     }
-  }
+  },
+  "css.validate": true,
+  "html.validate.scripts": true,
+  "html.validate.styles": true,
+  "javascript.suggestionActions.enabled": true,
+  "typescript.format.enable": true
 }
