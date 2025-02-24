@@ -1,3 +1,4 @@
+
 {
   "languageserver": {
     "go": {
@@ -5,11 +6,31 @@
       "rootPatterns": ["go.mod"],
       "trace.server": "verbose",
       "filetypes": ["go"]
+    },
+    "php": {
+      "command": "phpactor",
+      "args": ["language-server"],
+      "filetypes": ["php"],
+      "rootPatterns": ["composer.json", "index.php", ".git/"]
     }
   },
   "css.validate": true,
   "html.validate.scripts": true,
   "html.validate.styles": true,
   "javascript.suggestionActions.enabled": true,
-  "typescript.format.enable": true
+  "typescript.format.enable": true,
+  "suggest.noselect": false,
+  "coc.preferences.formatOnSaveFiletypes": ["html", "css", "javascript", "php"],
+  "coc.preferences.extensionUpdateCheck": "weekly",
+  "diagnostic.virtualText": true,
+  "diagnostic.enableSign": true,
+  "diagnostic.checkCurrentLine": true,
+  "diagnostic.errorSign": "✖",
+  "diagnostic.warningSign": "⚠",
+  "diagnostic.infoSign": "ℹ",
+  "diagnostic.hintSign": "💡",
+  "intelephense.files.associations": ["*.php", "*.inc"],
+  "intelephense.format.enable": true,
+  "javascript.suggestionActions.enabled": true,
+  "typescript.suggestionActions.enabled": true
 }
