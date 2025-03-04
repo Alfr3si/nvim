@@ -1,0 +1,113 @@
+--Modo Normal------------------------------------------------------------------
+h  --> Moverse a la izquierda
+l  --> Moverse a la derecha
+j  --> Moverse hacia abajo
+k  --> Moverse hacia arriba
+0  --> Ir al inicio de la linea
+^  --> Ir al primer cararcter no vacio de la linea
+$  --> Ir al final de la linea
+w  --> Ir al inicio de la siguiente palabra
+e  --> Ir al final de la palabra actual
+b  --> Ir al inicio de la palabra anterior
+G  --> Ir al final del archivo
+H  --> Ir a la parte superior de la pantalla
+L  --> Ir a la parte inferior de la pantalla
+n  --> Buscar la siguiente ocurrencia de la ultima busqueda
+N  --> Buscar la anterior ocurrencia de la ultima busqueda
+
+gg --> Ir al inicio del archivo
+zz --> Centrar la linea actual en la pantalla
+
+ctrl + d --> Avanzar media pagina hacia abajo
+ctrl + u --> Retroceder media pagina hacia arriba
+ctrl + f --> Avanzar una pagina completa
+ctrl + b --> Retroceder una pagina completa
+
+--Modo Insercion----------------------------------------------------------------
+i  --> Insertar antel del cursor
+I  --> Insertar al inicio de la linea
+a  --> Insertar despues del cursor
+A  --> Insertar al final de la linea
+o  --> Insertar una nueva linea debajo
+O  --> Insertar una nueva linea encima
+Esc --> Salir del modo insercion
+
+--Modo Visual---------------------------------------------------------------------
+v  --> Modo visual caracter a caracter
+V  --> Modo visual linea completa
+o  --> Moverse entre los extremos de la seleccion
+y  --> Copiar (yank) la seleccion
+d  --> Cortar la seleccion
+x  --> Eliminar la seleccion
+P  --> Pegar despues del cursor
+p  --> Pegar antes del cursor
+
+ctrl + v --> Modo viusal en bloque (columnas)
+
+--Operaciones de Edicion-----------------------------------------------------------
+x  --> Eliminar el caracter bajo el cursor
+X  --> Eliminar el caracter antes del cursor
+P  --> Pegar despues del cursor
+p  --> Pegar antes del cursor
+u  --> Deshacer el ultimo cambio
+.  --> Repetir el ultimo comando
+J  --> Unir la linea actual con la siguiente
+R  --> Modo reemplazo (sobreescribir)
+C  --> Cambiar desde el cursor hasta el final de la linea
+s  --> Eliminar el caracter bajo el cursor e ingresar en modo insercion
+S  --> Eliminar la linea y entrar en modo insercion
+
+dd --> Eliminar (cortar una linea)
+yy --> Copiar una linea
+cw --> cambiar desde el cursor hasta el final de la palabra
+ciw --> Cambiar la palabra 
+r<char> --> Reemplazar el caracter bajo el cursor
+ctrl + r --> Rehacer el ultimo cambio
+
+--Comandos en linea : -------------------------------------------------------------
+:w		      --> Guardar el archivo
+:q 		      --> Salir de Vim
+:wq / :x 	      --> Guardar y salir
+:q!		      --> Salir sin guardar
+:e archivo	      --> Abrir otro archivo
+:saveas archivo       --> Guardar como otro archivo
+:set number	      --> Mostrar numeros en linea
+:set relativenumber   --> Mostrar numeros relativos
+:noh		      --> Borrar resaltado de la busqueda
+:syntax on            --> Activar resaltado de sintaxis
+:syntax off 	      --> Desactivar resaltado de sintaxis
+
+--Busqueda y reemplazo--------------------------------------------------------------
+/texto		   --> Buscar texto hacia adelante
+?texto		   --> Buscar texto hacia atras
+n		   --> Siguiente coincidencia
+N		   --> Coincidencia anterior
+:%s/viejo/nuevo/g  --> Reemplazar todas las apariciones de "viejo" por "nevo"
+:%s/viejo/nievo/gc --> Reemplazar con confirmacion
+
+--Trabajando con multiples archivos---------------------------------------------------
+:split archivo     --> Dividir la ventana horizontalmente y abrir archivo
+:vsplit archivo    --> Dividir la ventana verticalmente y abrir archivo 
+:tabnew archivo    --> Abrir archivo en un nuevo tab
+:bnext (:bn)	   --> Ir al siguiente buffer
+:bprev (:bp)	   --> Ir al buffer anterior
+:bd 		   --> Cerrar el buffer actual
+ctrl + w w	   --> Alternar entre ventanas
+ctrl + w h/j/k/l   --> Moverse entre ventanas
+gt                 --> Ir al siguiente tab
+gT		   --> Ir al tab anterior
+
+--Macros y registros-------------------------------------------------------------------
+q<letra>	   --> Iniciar la grabacion en el registro <letra>
+q	 	   --> Detener la grabacion
+@<letra> 	   --> Ejecutar la macro guardada en <letra>
+@@	 	   --> Repetir la ultima macro ejecutada
+
+--Terminal en neovim--------------------------------------------------------------------
+:terminal              --> Abrir una terminal dentro de Neovim
+ctrl + \ ctrl + n      --> Salir del modo terminal a modo normal
+ctrl + w h/j/k/l       --> Moverse entre la terminal y otras ventanas
+
+
+
+
