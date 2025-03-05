@@ -45,5 +45,27 @@ require("lazy").setup({
 
   -- Muestra cambios en el archivo actual (líneas eliminadas, agregadas, etc.)
   { "lewis6991/gitsigns.nvim" },
+
+  --Para poder crear Snippets
+  { "rafamadriz/friendly-snippets" },
+
+  --para especificacion and full type annotations
+  { "nvim-neotest/nvim-nio" },
+  
+  --para comentarios
+  { "JoosepAlviste/nvim-ts-context-commentstring" },
+
+  -- UI for messages cmdline and the popupmenu
+  {
+  "folke/noice.nvim",
+   event = "VeryLazy",
+   opts = {
+    -- add any options here
+    },
+   dependencies = {
+     "MunifTanjim/nui.nvim",
+     "rcarriga/nvim-notify",
+     }
+   }
 })
 

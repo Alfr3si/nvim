@@ -19,3 +19,4 @@ vim.opt.encoding = 'UTF-8'
 vim.opt.cursorline = true
 vim.opt.termguicolors = true
 vim.cmd('colorscheme catppuccin-mocha')
+vim.opt.termguicolors = true
