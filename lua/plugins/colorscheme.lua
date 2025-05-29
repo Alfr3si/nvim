@@ -5,7 +5,7 @@ return {
     config = function()
         --Load the colorcheme here
         require ("tokyonight").setup({
-            transparent_background = true,
+            transparent = true,
         })
         vim.cmd([[colorscheme tokyonight]])
     end,

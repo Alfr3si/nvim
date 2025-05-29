@@ -4,7 +4,7 @@ return {
     priority = 1000,
     config = function()
     require ("snacks").setup({
-        dashboard = require("plugins.UI.dashboard"),
+        dashboard = require("plugins.settings.dashboard"),
         indent = { enabled = true },
         input = { enabled = true },
         explorer = { enabled = true },
