@@ -1,4 +1,3 @@
-
 return {
   "nvim-treesitter/nvim-treesitter",
   event = "VeryLazy",
@@ -13,6 +12,8 @@ return {
         "javascript",
         "html",
         "python",
+        "c",
+        "sql",
       },
       highlight = {
         enable = true,

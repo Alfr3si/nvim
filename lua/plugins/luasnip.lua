@@ -5,3 +5,4 @@ return {
      main = "plugins.settings.luasnip",
      config = true,
 }
+
