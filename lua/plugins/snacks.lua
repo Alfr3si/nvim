@@ -1,3 +1,4 @@
+---@diagnostic disable : undefined-global
 return {
 	"folke/snacks.nvim",
 	lazy = false,
@@ -11,38 +12,9 @@ return {
 			picker = { enabled = true },
 			notifier = { enabled = true },
 			image = { enabled = false },
+			statuscolumn = { enabled = true },
 		})
 	end,
 	--these keymaps are for picker
-	keys = {
-		{
-			"<leader>e",
-			function()
-				require("snacks").explorer()
-			end,
-			desc = "File Explorer",
-		},
-		{
-			"<leader>ff",
-			function()
-				require("snacks").picker.files()
-			end,
-			desc = "Find Files",
-		},
-		{
-			"<leader>g",
-			function()
-				Snacks.picker.lines()
-			end,
-			desc = "Buffer Lines",
-		},
-		{
-			"<C-_>",
-			function()
-				require("snacks").terminal()
-			end,
-			desc = "open toggle a terminal",
-			mode = { "n", "t" },
-		},
-	},
+	keys = require("plugins.settings.key_snacks"),
 }

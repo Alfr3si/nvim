@@ -1,3 +1,4 @@
+---@diagnostic disable : undefined-global
 local AlfTheme = {
 	normal = {
 		a = { fg = "#1e1e2e", bg = "#a8ff51", gui = "bold" },
