@@ -9,6 +9,11 @@ return {
 ██║ ╚████║███████╗╚██████╔╝ ╚████╔╝ ██║██║ ╚═╝ ██║
 ╚═╝  ╚═══╝╚══════╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝]],
 	},
+	formats = {
+		key = function(item)
+			return { { "[", hl = "special" }, { item.key, hl = "key" }, { "]", hl = "special" } }
+		end,
+	},
 	keys = {
 		{ icon = " ", key = "[f]", desc = "Find File", action = ":lua Snacks.dashboard.pick('files')" },
 		{ icon = " ", key = "[n]", desc = "New File", action = ":ene | startinsert" },
@@ -26,7 +31,8 @@ return {
 	},
 	sections = {
 		{ section = "header" },
-		{ section = "keys", gap = 1, padding = 1 },
-		{ section = "startup", gap = 1, padding = 1 },
+		{ icon = " ", title = "Keymaps", section = "keys", indent = 2, padding = 2 },
+		{ icon = " ", title = "Recent Files", section = "recent_files", indent = 2, padding = 1 },
+		{ section = "startup" },
 	},
 }

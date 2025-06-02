@@ -1,5 +1,5 @@
 return {
-	--there are for open explorer and grep 
+	--NOTE:there are for open explorer and grep 
 	{
 		"<leader>e",
 		function()
@@ -21,7 +21,7 @@ return {
 		end,
 		desc = "Buffer Lines",
 	},
-	--there is for open toggle terminal 
+	--NOTE:there is for open toggle terminal 
 	{
 		"<C-_>",
 		function()
@@ -30,7 +30,7 @@ return {
 		desc = "open toggle a terminal",
 		mode = { "n", "t" },
 	},
-	--there is for search  
+	--NOTE:there is for search  
 	{
 		"<leader>sh",
 		function()
@@ -66,7 +66,7 @@ return {
 		end,
 		desc = "Man Pages",
 	},
-	--there are for using Git 
+	--NOTE:there are for using Git 
 	{
 		"<leader>gb",
 		function()
