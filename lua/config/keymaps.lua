@@ -1,7 +1,7 @@
 --these are keybindings very utils
 vim.keymap.set("n", "<C-q>", ":bd<CR>", { desc = "Cerrar buffer actual", silent = true })
 
---TODO:: there are commands utils with the servers LSP------------------
+--there are commands utils with the servers LSP------------------
 vim.api.nvim_create_autocmd("LspAttach", {
 	callback = function(args)
 		local bufnr = args.buf
