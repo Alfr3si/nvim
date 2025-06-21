@@ -23,6 +23,7 @@ return {
 				"lua_ls",
 				"phpactor",
 				"pyright",
+				"clangd",
 			},
 			automatic_installation = true,
 		})
@@ -38,7 +39,7 @@ return {
 		end
 
 		-- List of tools externs :
-		local tools = { "black", "isort", "prettier", "prettierd", "stylua" }
+		local tools = { "black", "isort", "prettier", "prettierd", "stylua", "clang-format" }
 		for _, tool in ipairs(tools) do
 			ensure_installed(tool)
 		end

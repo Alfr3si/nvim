@@ -7,7 +7,7 @@ vim.diagnostic.config({
 	update_in_insert = false,
 })
 
-local servers = { "lua", "php", "html", "python", "css", "tailwindcss" }
+local servers = { "lua", "php", "html", "python", "css", "tailwindcss", "clangd" }
 
 for _, server in ipairs(servers) do
 	vim.lsp.enable(server)
