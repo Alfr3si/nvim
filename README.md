@@ -6,9 +6,9 @@ This is my personal Neovim configuration, designed to be fast and efficient. Fee
 
 # Preview
 
-![image](assets/Neovim.png)
-![image2](assets/config.png)
-![image2](assets/code.png)
+![image](assets/neovim.png)
+![image2](assets/Config.png)
+![image2](assets/Code.png)
 
 # Plugins
 
