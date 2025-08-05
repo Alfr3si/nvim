@@ -28,6 +28,7 @@ This is my personal Neovim configuration, designed to be fast and efficient. Fee
 
 ## LSP
 
+- [autopair](https://github.com/altermo/ultimate-autopair.nvim)
 - [autotag](https://github.com/windwp/nvim-ts-autotag)
 - [blink.cmp](https://github.com/saghen/blink.cmp)
 - [blink.compat](https://github.com/Saghen/blink.compat)
