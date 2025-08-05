@@ -32,7 +32,6 @@ This is my personal Neovim configuration, designed to be fast and efficient. Fee
 - [autotag](https://github.com/windwp/nvim-ts-autotag)
 - [blink.cmp](https://github.com/saghen/blink.cmp)
 - [blink.compat](https://github.com/Saghen/blink.compat)
-- [blink.pairs](https://github.com/Saghen/blink.pairs)
 - [blink-emoji](https://github.com/moyiz/blink-emoji.nvim)
 - [conform](https://github.com/stevearc/conform.nvim)
 - [friendly-snippets](https://github.com/rafamadriz/friendly-snippets)
