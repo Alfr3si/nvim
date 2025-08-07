@@ -15,7 +15,11 @@ return {
 			"html",
 			"python",
 			"c",
+			"diff",
 			"sql",
+			"bash",
+			"yaml",
+			"json",
 			"markdown",
 			"markdown_inline", -- util for Snacks.image
 			"latex", -- 👈 these render latex

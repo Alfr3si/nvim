@@ -25,6 +25,9 @@ This is my personal Neovim configuration, designed to be fast and efficient. Fee
 - [render-markdown](https://github.com/MeanderingProgrammer/render-markdown.nvim)
 - [snacks](https://github.com/folke/snacks.nvim)
 - [treesiter](https://github.com/nvim-treesitter/nvim-treesitter)
+- [oil](https://github.com/stevearc/oil.nvim?tab=readme-ov-file#requirements)
+- [smear-cursor](https://github.com/sphamba/smear-cursor.nvim)
+- [screenkey](https://github.com/NStefan002/screenkey.nvim)
 
 ## LSP
 
@@ -54,7 +57,8 @@ This is my personal Neovim configuration, designed to be fast and efficient. Fee
 
 ## Tools
 
-- [comment](https://github.com/numToStr/Comment.nvim)
+- [mini.comment](https://github.com/echasnovski/mini.comment)
+- [nvim-ts-context-commentstring](https://github.com/JoosepAlviste/nvim-ts-context-commentstring)
 - [fzf](https://github.com/ibhagwan/fzf-lua)
 - [kulala](https://github.com/mistweaverco/kulala.nvim)
 - [live-preview](https://github.com/brianhuster/live-preview.nvim)

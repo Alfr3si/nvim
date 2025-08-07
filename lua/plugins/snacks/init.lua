@@ -23,6 +23,7 @@ return {
 			pattern = "VeryLazy",
 			callback = function()
 				Snacks.toggle.indent():map("<leader>tg")
+				Snacks.toggle.animate():map("<leader>ta")
 				Snacks.toggle.dim():map("<leader>td")
 				Snacks.toggle.diagnostics():map("<leader>tD")
 				Snacks.toggle.zen():map("<leader>tZ")
@@ -65,6 +66,32 @@ return {
 						end,
 					})
 					:map("<leader>tC")
+				--- custom
+				local smear_state = false
+				Snacks.toggle
+					.new({
+						name = "Smear Cursor",
+						get = function()
+							return smear_state
+						end,
+						set = function(state)
+							require("smear_cursor").toggle()
+							smear_state = state
+						end,
+					})
+					:map("<leader>tA")
+				--- custom
+				Snacks.toggle
+					.new({
+						name = "Screenkey",
+						get = function()
+							return require("screenkey").is_active()
+						end,
+						set = function()
+							require("screenkey").toggle()
+						end,
+					})
+					:map("<leader>tK") -- cambia el atajo si lo prefieres
 			end,
 		})
 	end,

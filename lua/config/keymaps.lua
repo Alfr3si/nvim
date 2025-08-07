@@ -34,27 +34,29 @@ vim.keymap.set("v", "<A-j>", "<cmd>m '>+1<Return>gv=gv", { desc = "Move line dow
 vim.keymap.set("v", "<A-k>", "<cmd>m '<-2<Return>gv=gv", { desc = "Move line up" })
 
 --There are commands utils with the servers LSP------------------
+
 vim.api.nvim_create_autocmd("LspAttach", {
 	callback = function(args)
 		local bufnr = args.buf
 
 		local opts = { noremap = true, silent = true, buffer = bufnr }
-
-		-- Hover
-		vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
-		-- go to definition
-		vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
-		-- go to declaration
-		vim.keymap.set("n", "gD", vim.lsp.buf.declaration, opts)
-		-- look implementations
-		vim.keymap.set("n", "gri", vim.lsp.buf.implementation, opts)
-		-- look references
-		vim.keymap.set("n", "grr", vim.lsp.buf.references, opts)
-		-- Information of symbols
-		vim.keymap.set("n", "grh", vim.lsp.buf.signature_help, opts)
-		-- rename symbol
-		vim.keymap.set("n", "grn", vim.lsp.buf.rename, opts)
-		--Code actions
-		vim.keymap.set({ "n", "v" }, "gra", vim.lsp.buf.code_action, opts)
+-- stylua: ignore start
+		-- Hover documentation
+		vim.keymap.set("n", "K", vim.lsp.buf.hover, vim.tbl_extend("force", opts, { desc = "Show hover documentation" }))
+		-- Go to definition
+		vim.keymap.set("n", "gd", vim.lsp.buf.definition, vim.tbl_extend("force", opts, { desc = "Go to definition" }))
+		-- Go to declaration
+		vim.keymap.set("n", "gD", vim.lsp.buf.declaration, vim.tbl_extend("force", opts, { desc = "Go to declaration" }))
+		-- List implementations
+		vim.keymap.set("n", "gri", vim.lsp.buf.implementation, vim.tbl_extend("force", opts, { desc = "List implementations" }))
+		-- List references
+		vim.keymap.set("n", "grr", vim.lsp.buf.references, vim.tbl_extend("force", opts, { desc = "List references" }))
+		-- Show signature help
+		vim.keymap.set("n", "grh", vim.lsp.buf.signature_help, vim.tbl_extend("force", opts, { desc = "Show signature help" }))
+		-- Rename symbol
+		vim.keymap.set("n", "grn", vim.lsp.buf.rename, vim.tbl_extend("force", opts, { desc = "Rename symbol" }))
+		-- Code actions
+		vim.keymap.set({ "n", "v" }, "gra", vim.lsp.buf.code_action, vim.tbl_extend("force", opts, { desc = "Code actions" }))
+		-- stylua: ignore end
 	end,
 })
