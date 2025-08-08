@@ -26,6 +26,7 @@ This is my personal Neovim configuration, designed to be fast and efficient. Fee
 - [snacks](https://github.com/folke/snacks.nvim)
 - [treesiter](https://github.com/nvim-treesitter/nvim-treesitter)
 - [oil](https://github.com/stevearc/oil.nvim?tab=readme-ov-file#requirements)
+- [outline](https://github.com/hedyhli/outline.nvim)
 - [smear-cursor](https://github.com/sphamba/smear-cursor.nvim)
 - [screenkey](https://github.com/NStefan002/screenkey.nvim)
 
