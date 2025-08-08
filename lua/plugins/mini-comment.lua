@@ -1,5 +1,6 @@
 return {
 	"echasnovski/mini.comment",
+	lazy = true,
 	dependencies = {
 		{
 			"JoosepAlviste/nvim-ts-context-commentstring",
@@ -9,7 +10,6 @@ return {
 			},
 		},
 	},
-	event = "VeryLazy",
 	opts = {
 		options = {
 			custom_commentstring = function()

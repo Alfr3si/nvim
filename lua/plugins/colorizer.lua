@@ -1,11 +1,11 @@
 return {
 	"norcalli/nvim-colorizer.lua",
 	ft = {
-		"css",
-		"html",
-		"php",
-		"javascript",
-		"tailwindcss",
+		-- "css",
+		-- "html",
+		-- "php",
+		-- "javascript",
+		-- "tailwindcss",
 	},
 	cmd = "ColorizerToggle",
 	config = function()

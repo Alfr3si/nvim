@@ -105,6 +105,27 @@ return {
 						end,
 					})
 					:map("<leader>to")
+				--- custom
+				local _C = {}
+				vim.api.nvim_create_autocmd("BufWipeout", {
+					callback = function(a)
+						_C[tonumber(a.buf)] = nil
+					end,
+				})
+
+				Snacks.toggle
+					.new({
+						name = "Colorizer",
+						get = function()
+							return _C[vim.api.nvim_get_current_buf()] == true
+						end,
+						set = function(state)
+							vim.cmd("ColorizerToggle") -- llama al comando del plugin (lazy-load si hace falta)
+							local b = vim.api.nvim_get_current_buf()
+							_C[b] = (state == nil) and not (_C[b] == true) or state
+						end,
+					})
+					:map("<leader>tc")
 			end,
 		})
 	end,
