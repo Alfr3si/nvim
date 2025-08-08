@@ -34,7 +34,8 @@ return {
 				--- git
 				{ "<leader>g", group = "Git", icon = { icon = " ", color = "orange" } },
 				{ "<leader>gb", group = "Blame line", icon = { icon = " ", color = "orange" } },
-				{ "<leader>gB", group = "Browse", icon = { icon = " ", color = "orange" } },
+				{ "<leader>gB", group = "Blame Buffer", icon = { icon = " ", color = "orange" } },
+				{ "<leader>gW", group = "Web Browse", icon = { icon = " ", color = "orange" } },
 				{ "<leader>gs", group = "Status", icon = { icon = " ", color = "orange" } },
 				{ "<leader>gf", group = "Lazygit current file history", icon = { icon = " ", color = "orange" } },
 				{ "<leader>gg", group = "Lazygit", icon = { icon = " ", color = "orange" } },

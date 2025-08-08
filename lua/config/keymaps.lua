@@ -33,6 +33,9 @@ vim.keymap.set("n", "<A-k>", "<cmd>m .-2<Return>==", { desc = "Move line up" })
 vim.keymap.set("v", "<A-j>", "<cmd>m '>+1<Return>gv=gv", { desc = "Move line down" })
 vim.keymap.set("v", "<A-k>", "<cmd>m '<-2<Return>gv=gv", { desc = "Move line up" })
 
+--- Git Blame
+vim.keymap.set("n", "<leader>gB", "<cmd>Git blame<cr>", { desc = "Git blame buffer" })
+
 --There are commands utils with the servers LSP------------------
 
 vim.api.nvim_create_autocmd("LspAttach", {

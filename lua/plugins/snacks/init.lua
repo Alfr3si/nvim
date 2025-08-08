@@ -92,6 +92,19 @@ return {
 						end,
 					})
 					:map("<leader>tK") -- cambia el atajo si lo prefieres
+				--- custom
+				Snacks.toggle
+					.new({
+						id = "outline",
+						name = "Outline",
+						get = function()
+							return require("outline").is_open()
+						end,
+						set = function()
+							require("outline").toggle()
+						end,
+					})
+					:map("<leader>to")
 			end,
 		})
 	end,
@@ -118,7 +131,7 @@ return {
     {"<leader>su", function() Snacks.picker.undo() end, desc = "Undo History" },
         --- git
     {"<leader>gb", function() Snacks.git.blame_line() end,desc = "Git Blame Line", {"n", "v"}},
-    {"<leader>gB", function() Snacks.gitbrowse() end, desc = "Git browse"},
+    {"<leader>gW", function() Snacks.gitbrowse() end, desc = "Git Web browse"},
     {"<leader>gf", function() Snacks.lazygit.log_file() end, desc = "Lazygit Current File History"},
     {"<leader>gl", function() Snacks.lazygit.log() end, desc = "Lazygit Log (cwd)"},
     {"<leader>gs", function() Snacks.picker.git_status() end, desc = "Git status"},
