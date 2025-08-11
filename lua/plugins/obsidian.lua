@@ -41,5 +41,6 @@ return {
 			nvim_cmp = false,
 			blink = true,
 		},
+		ui = { enable = false },
 	},
 }
