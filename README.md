@@ -12,11 +12,11 @@ This is my personal Neovim configuration, designed to be fast and efficient. Fee
 
 # Plugins
 
-## Package Manager
+## Package Manager 📦
 
 - [lazy.nvim ](https://github.com/folke/lazy.nvim)
 
-## UI
+## UI 👀
 
 - [colorscheme](https://github.com/folke/tokyonight.nvim) _(Tokyonight)_
 - [colorizer](https://github.com/norcalli/nvim-colorizer.lua)
@@ -25,12 +25,13 @@ This is my personal Neovim configuration, designed to be fast and efficient. Fee
 - [render-markdown](https://github.com/MeanderingProgrammer/render-markdown.nvim)
 - [snacks](https://github.com/folke/snacks.nvim)
 - [treesiter](https://github.com/nvim-treesitter/nvim-treesitter)
+- [treesiter-textobjects](https://github.com/nvim-treesitter/nvim-treesitter-textobjects)
 - [oil](https://github.com/stevearc/oil.nvim?tab=readme-ov-file#requirements)
 - [outline](https://github.com/hedyhli/outline.nvim)
 - [smear-cursor](https://github.com/sphamba/smear-cursor.nvim)
 - [screenkey](https://github.com/NStefan002/screenkey.nvim)
 
-## LSP
+## LSP 📂
 
 - [autopair](https://github.com/altermo/ultimate-autopair.nvim)
 - [autotag](https://github.com/windwp/nvim-ts-autotag)
@@ -45,18 +46,18 @@ This is my personal Neovim configuration, designed to be fast and efficient. Fee
 - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
 - [neocodeium](https://github.com/monkoose/neocodeium)
 
-## DB
+## DB 📑
 
 - [vim-dadbod](https://github.com/tpope/vim-dadbod)
 - [vim-dadbod-ui](https://github.com/kristijanhusak/vim-dadbod-ui)
 - [vim-dadbod-completion](https://github.com/kristijanhusak/vim-dadbod-completion)
 
-## Git
+## Git 😽
 
 - [fugitive](https://github.com/tpope/vim-fugitive)
 - [gitsigns](https://github.com/lewis6991/gitsigns.nvim)
 
-## Tools
+## Tools 🧰
 
 - [mini.comment](https://github.com/echasnovski/mini.comment)
 - [nvim-ts-context-commentstring](https://github.com/JoosepAlviste/nvim-ts-context-commentstring)

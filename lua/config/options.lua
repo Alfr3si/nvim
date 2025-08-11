@@ -20,3 +20,4 @@ opt.mouse = ""
 opt.clipboard = "unnamedplus"
 opt.cursorline = true
 opt.conceallevel = 1
+opt.foldenable = true

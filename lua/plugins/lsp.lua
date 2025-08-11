@@ -20,7 +20,11 @@ return {
 	{
 		"williamboman/mason-lspconfig.nvim",
 		event = "BufReadPre",
-		dependencies = { "williamboman/mason.nvim", "neovim/nvim-lspconfig" },
+		dependencies = {
+			"williamboman/mason.nvim",
+			"neovim/nvim-lspconfig",
+			"saghen/blink.cmp",
+		},
 		config = function()
 			-- 1) inicializa mason
 			require("mason").setup()
@@ -71,11 +75,13 @@ return {
 					end
 				end
 			end
-
+			-- Obtén las capacidades de blink.cmp para LSP
+			local capabilities = require("blink.cmp").get_lsp_capabilities()
 			-- 4) configura manualmente los LSPs con lspconfig (solo una instancia por servidor)
 			local lspconfig = require("lspconfig")
 
 			lspconfig.lua_ls.setup({
+				capabilities = capabilities,
 				settings = {
 					Lua = {
 						telemetry = { enable = false },
@@ -84,14 +90,14 @@ return {
 				},
 			})
 
-			lspconfig.pyright.setup({})
-			lspconfig.phpactor.setup({})
-			lspconfig.clangd.setup({})
-			lspconfig.html.setup({})
-			lspconfig.cssls.setup({})
-			lspconfig.tailwindcss.setup({})
-			lspconfig.sqlls.setup({})
-			lspconfig.marksman.setup({})
+			lspconfig.pyright.setup({ capabilities = capabilities })
+			lspconfig.phpactor.setup({ capabilities = capabilities })
+			lspconfig.clangd.setup({ capabilities = capabilities })
+			lspconfig.html.setup({ capabilities = capabilities })
+			lspconfig.cssls.setup({ capabilities = capabilities })
+			lspconfig.tailwindcss.setup({ capabilities = capabilities })
+			lspconfig.sqlls.setup({ capabilities = capabilities })
+			lspconfig.marksman.setup({ capabilities = capabilities })
 		end,
 	},
 }

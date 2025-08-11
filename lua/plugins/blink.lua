@@ -16,7 +16,7 @@ return {
 				version = "v2.*",
 				name = "luasnip",
 				config = function()
-					require("luasnip.loaders.from_vscode").lazy_load()
+					require("plugins.conf.luasnip").config()
 				end,
 			},
 			{ "echasnovski/mini.icons", opts = {} },
@@ -70,6 +70,8 @@ return {
 				},
 				keymap = {
 					["<C-f>"] = {},
+					["<C-j>"] = {},
+					["<C-k>"] = {},
 				},
 				cmdline = {
 					enabled = false,
