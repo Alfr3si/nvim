@@ -12,7 +12,7 @@ This is my personal Neovim configuration, designed to be fast and efficient. Fee
 
 # Plugins
 
-## Package Manager 📦
+## Plugin Manager 📦
 
 - [lazy.nvim ](https://github.com/folke/lazy.nvim)
 
@@ -33,18 +33,27 @@ This is my personal Neovim configuration, designed to be fast and efficient. Fee
 
 ## LSP 📂
 
-- [autopair](https://github.com/altermo/ultimate-autopair.nvim)
+- [conform](https://github.com/stevearc/conform.nvim)
+- [lazydev](https://github.com/folke/lazydev.nvim)
+- [mason-lspconfig](https://github.com/mason-org/mason-lspconfig.nvim)
+- [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
+
+## Completion 🤖
+
+- [mini.pair](https://github.com/echasnovski/mini.pairs)
 - [autotag](https://github.com/windwp/nvim-ts-autotag)
 - [blink.cmp](https://github.com/saghen/blink.cmp)
 - [blink.compat](https://github.com/Saghen/blink.compat)
 - [blink-emoji](https://github.com/moyiz/blink-emoji.nvim)
-- [conform](https://github.com/stevearc/conform.nvim)
 - [friendly-snippets](https://github.com/rafamadriz/friendly-snippets)
-- [lazydev](https://github.com/folke/lazydev.nvim)
 - [luasnip](https://github.com/L3MON4D3/LuaSnip)
-- [mason-lspconfig](https://github.com/mason-org/mason-lspconfig.nvim)
-- [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
 - [neocodeium](https://github.com/monkoose/neocodeium)
+
+## Debugging 🐞
+
+- [nvim-dap](https://github.com/mfussenegger/nvim-dap)
+- [nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui)
+- [nvim-dap-virtual-text](https://github.com/theHamsta/nvim-dap-virtual-text)
 
 ## DB 📑
 
@@ -60,14 +69,15 @@ This is my personal Neovim configuration, designed to be fast and efficient. Fee
 ## Tools 🧰
 
 - [mini.comment](https://github.com/echasnovski/mini.comment)
+- [mini.ai](https://github.com/echasnovski/mini.ai)
 - [nvim-ts-context-commentstring](https://github.com/JoosepAlviste/nvim-ts-context-commentstring)
-- [fzf](https://github.com/ibhagwan/fzf-lua)
 - [kulala](https://github.com/mistweaverco/kulala.nvim)
 - [live-preview](https://github.com/brianhuster/live-preview.nvim)
 - [mason](https://github.com/mason-org/mason.nvim)
 - [minty](https://github.com/nvzone/minty)
 - [obsidian](https://github.com/epwalsh/obsidian.nvim)
 - [plenary](https://github.com/nvim-lua/plenary.nvim)
+- [nvim-nio](https://github.com/nvim-neotest/nvim-nio)
 - [todo_comments](https://github.com/folke/todo-comments.nvim)
 - [which-key](https://github.com/folke/which-key.nvim)
 

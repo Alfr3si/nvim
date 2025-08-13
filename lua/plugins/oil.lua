@@ -7,6 +7,10 @@ return {
 	keys = {
 		{ "-", "<Cmd>Oil<CR>" },
 	},
-	mcd = { "Oil" },
-	lazy = true,
+	config = function()
+		require("oil").setup({
+			default_file_explorer = true,
+		})
+	end,
+	lazy = false,
 }

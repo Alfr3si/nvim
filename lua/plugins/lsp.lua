@@ -41,6 +41,7 @@ return {
 					"tailwindcss",
 					"sqlls",
 					"marksman",
+					"csharp_ls",
 				},
 				automatic_installation = true,
 				-- importante: evita que mason-lspconfig active LSPs automáticamente
@@ -68,6 +69,7 @@ return {
 					"sqlfluff",
 					"markdownlint-cli2",
 					"markdown-toc",
+					"csharpier",
 				}) do
 					-- evita errores si el paquete no existe en el registro
 					if mr.has_package(tool) then
@@ -98,6 +100,7 @@ return {
 			lspconfig.tailwindcss.setup({ capabilities = capabilities })
 			lspconfig.sqlls.setup({ capabilities = capabilities })
 			lspconfig.marksman.setup({ capabilities = capabilities })
+			lspconfig.csharp_ls.setup({ capabilities = capabilities })
 		end,
 	},
 }

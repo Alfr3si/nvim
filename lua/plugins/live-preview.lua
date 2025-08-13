@@ -1,14 +1,14 @@
 return {
 	"brianhuster/live-preview.nvim",
-	dependencies = { "ibhagwan/fzf-lua" },
+	dependencies = { "folke/snacks.nvim" },
 	cmd = { "LivePreview" },
 	config = function()
 		require("livepreview.config").set({
 			port = 5500,
-			browser = "default",
+			browser = "firefox", -- add your favorite browser
 			dynamic_root = false,
 			sync_scroll = true,
-			picker = "fzf-lua",
+			picker = "", -- because  If nil, the plugin look for the first available picker
 		})
 	end,
 }

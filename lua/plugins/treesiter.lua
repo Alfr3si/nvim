@@ -28,6 +28,7 @@ return {
 			"latex", -- 👈 these render latex
 			"http",
 			"graphql",
+			"c_sharp",
 		},
 		-- Install parsers synchronously (only applied to `ensure_installed`)
 		sync_install = false,

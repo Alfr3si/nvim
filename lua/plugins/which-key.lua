@@ -9,6 +9,18 @@ return {
 			{
 				mode = { "n", "v" },
 				{ "<leader><tab>", group = "tabs" },
+				--- debug
+				{ "<leader>d", group = "Debug" },
+				{ "<leader>da", group = "Activate", icon = { icon = " ", color = "yellow" } },
+				{ "<leader>db", group = "Breakpoint", icon = { icon = " ", color = "red" } },
+				{ "<leader>dc", group = "Continue", icon = { icon = " ", color = "green" } },
+				{ "<leader>dh", group = "Evaluate expression", icon = { icon = "󰫧 ", color = "yellow" } },
+				{ "<leader>dj", group = "Step over", icon = { icon = " ", color = "red" } },
+				{ "<leader>dk", group = "Step out", icon = { icon = " ", color = "yellow" } },
+				{ "<leader>dl", group = "Step into", icon = { icon = " ", color = "yellow" } },
+				{ "<leader>dr", group = "Run to cursor", icon = { icon = "󰇀 ", color = "green" } },
+				{ "<leader>dx", group = "Terminate", icon = { icon = " ", color = "red" } },
+
 				{ "<leader>e", group = "File explorer", icon = { icon = " ", color = "green" } },
 				{ "<leader>t", group = "Toggle", icon = { icon = " ", color = "yellow" } },
 				{ "<leader>C", group = "Color Picker", icon = { icon = " ", color = "orange" } },
