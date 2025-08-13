@@ -26,12 +26,12 @@ return {
 			require("render-markdown").setup(opts)
 
 			local md_colors = {
-				h1_bg = "#04d1f9",
+				h1_bg = "#fa4856",
 				h2_bg = "#e58f2a",
-				h3_bg = "#9ad900",
-				h4_bg = "#37f499",
-				h5_bg = "#987afb",
-				h6_bg = "#fca6ff",
+				h3_bg = "#fff207",
+				h4_bg = "#5da150",
+				h5_bg = "#04d1f9",
+				h6_bg = "#8a4f98",
 				h_fg = "#000000", -- texto negro
 				code_inline_fg = "#ffffff",
 				code_inline_bg = "#444444",
@@ -49,7 +49,7 @@ return {
 					vim.api.nvim_set_hl(0, "RenderMarkdownH" .. i .. "Bg", { bg = bg, fg = "#000000" })
 
 					-- cambia el color de ( --- )
-					vim.api.nvim_set_hl(0, "RenderMarkdownDash", { fg = "#e58f2a" })
+					-- vim.api.nvim_set_hl(0, "RenderMarkdownDash", { fg = "#e58f2a" })
 				end
 
 				-- Código inline usado por el plugin en la vista

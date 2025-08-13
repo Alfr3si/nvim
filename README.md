@@ -6,9 +6,9 @@ This is my personal Neovim configuration, designed to be fast and efficient. Fee
 
 # Preview
 
-![image](assets/neovim.png)
-![image2](assets/Config.png)
-![image2](assets/Code.png)
+![image](assets/dashboard.png)
+![image2](assets/config.png)
+![image2](assets/code.png)
 
 # Plugins
 
@@ -18,7 +18,7 @@ This is my personal Neovim configuration, designed to be fast and efficient. Fee
 
 ## UI 👀
 
-- [colorscheme](https://github.com/folke/tokyonight.nvim) _(Tokyonight)_
+- [colorscheme](https://github.com/sainnhe/sonokai/tree/master)
 - [colorizer](https://github.com/norcalli/nvim-colorizer.lua)
 - [lualine](https://github.com/nvim-lualine/lualine.nvim)
 - [mini.icons](https://github.com/echasnovski/mini.icons)
