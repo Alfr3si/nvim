@@ -26,13 +26,13 @@ return {
 			require("render-markdown").setup(opts)
 
 			local md_colors = {
-				h1_bg = "#fa4856",
-				h2_bg = "#e58f2a",
-				h3_bg = "#fff207",
-				h4_bg = "#5da150",
-				h5_bg = "#04d1f9",
-				h6_bg = "#8a4f98",
-				h_fg = "#000000", -- texto negro
+				h1_bg = "#ff6188", -- rojo/rosa (Monokai/Sonokai)
+				h2_bg = "#fc9867", -- naranja
+				h3_bg = "#ffd866", -- ámbar (amarillo-anaranjado)
+				h4_bg = "#a9dc76", -- verde
+				h5_bg = "#78dce8", -- cian (por si también quieres alinearlo)
+				h6_bg = "#ab9df2", -- púrpura
+				h_fg = "#000000", -- texto negro para el título
 				code_inline_fg = "#ffffff",
 				code_inline_bg = "#444444",
 			}
