@@ -7,10 +7,9 @@ return {
 	},
 	{
 		"saghen/blink.cmp",
-		event = "InsertEnter",
 		dependencies = {
 			"rafamadriz/friendly-snippets",
-			"moyiz/blink-emoji.nvim",
+			{ "moyiz/blink-emoji.nvim", ft = "markdown" },
 			{
 				"L3MON4D3/LuaSnip",
 				version = "v2.*",
@@ -105,29 +104,6 @@ return {
 						},
 						auto_show = true,
 						auto_show_delay_ms = 500,
-					},
-				},
-			})
-			vim.diagnostic.config({
-				virtual_lines = true,
-				--[[ 	virtual_text = true, ]]
-				underline = true,
-				update_in_insert = false,
-				severity_sort = true,
-				float = {
-					border = "rounded",
-					source = true,
-				},
-				signs = {
-					text = {
-						[vim.diagnostic.severity.ERROR] = "󰅚 ",
-						[vim.diagnostic.severity.WARN] = "󰀪 ",
-						[vim.diagnostic.severity.INFO] = "󰋽 ",
-						[vim.diagnostic.severity.HINT] = "󰌶 ",
-					},
-					numhl = {
-						[vim.diagnostic.severity.ERROR] = "ErrorMsg",
-						[vim.diagnostic.severity.WARN] = "WarningMsg",
 					},
 				},
 			})
