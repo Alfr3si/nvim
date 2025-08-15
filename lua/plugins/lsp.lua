@@ -41,7 +41,7 @@ return {
 					"tailwindcss",
 					"sqlls",
 					"marksman",
-					"csharp_ls",
+					"omnisharp",
 				},
 				automatic_installation = true,
 				-- importante: evita que mason-lspconfig active LSPs automáticamente
@@ -77,30 +77,20 @@ return {
 					end
 				end
 			end
-			-- Obtén las capacidades de blink.cmp para LSP
-			local capabilities = require("blink.cmp").get_lsp_capabilities()
-			-- 4) configura manualmente los LSPs con lspconfig (solo una instancia por servidor)
-			local lspconfig = require("lspconfig")
 
-			lspconfig.lua_ls.setup({
-				capabilities = capabilities,
-				settings = {
-					Lua = {
-						telemetry = { enable = false },
-						workspace = { checkThirdParty = false },
-					},
-				},
+			-- add cmp capabilities
+			vim.lsp.config("*", {
+				capabilities = require("blink.cmp").get_lsp_capabilities(),
 			})
-
-			lspconfig.pyright.setup({ capabilities = capabilities })
-			lspconfig.phpactor.setup({ capabilities = capabilities })
-			lspconfig.clangd.setup({ capabilities = capabilities })
-			lspconfig.html.setup({ capabilities = capabilities })
-			lspconfig.cssls.setup({ capabilities = capabilities })
-			lspconfig.tailwindcss.setup({ capabilities = capabilities })
-			lspconfig.sqlls.setup({ capabilities = capabilities })
-			lspconfig.marksman.setup({ capabilities = capabilities })
-			lspconfig.csharp_ls.setup({ capabilities = capabilities })
+			vim.lsp.enable("lua_ls")
+			vim.lsp.enable("cssls")
+			vim.lsp.enable("html")
+			vim.lsp.enable("phpactor")
+			vim.lsp.enable("marksman")
+			vim.lsp.enable("clangd")
+			vim.lsp.enable("tailwindcss")
+			vim.lsp.enable("pyright")
+			vim.lsp.enable("omnisharp")
 		end,
 	},
 }
