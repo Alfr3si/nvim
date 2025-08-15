@@ -36,7 +36,6 @@ This is my personal Neovim configuration, designed to be fast and efficient. Fee
 - [conform](https://github.com/stevearc/conform.nvim)
 - [lazydev](https://github.com/folke/lazydev.nvim)
 - [mason-lspconfig](https://github.com/mason-org/mason-lspconfig.nvim)
-- [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
 
 ## Completion 🤖
 
