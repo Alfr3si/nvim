@@ -9,7 +9,7 @@ return {
 		"saghen/blink.cmp",
 		dependencies = {
 			"rafamadriz/friendly-snippets",
-			{ "moyiz/blink-emoji.nvim", ft = "markdown" },
+			"moyiz/blink-emoji.nvim",
 			{
 				"L3MON4D3/LuaSnip",
 				version = "v2.*",
