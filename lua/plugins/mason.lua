@@ -37,7 +37,7 @@ return {
 					"tailwindcss",
 					"sqlls",
 					"marksman",
-					"csharp_ls",
+					"omnisharp",
 				},
 				automatic_installation = true,
 				-- importante: evita que mason-lspconfig active LSPs automáticamente

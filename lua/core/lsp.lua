@@ -54,5 +54,5 @@ vim.lsp.enable({
 	"php_actor",
 	"python",
 	"tailwindcss",
-	"csharp_ls",
+	"omnisharp",
 })
