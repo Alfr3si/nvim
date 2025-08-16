@@ -11,8 +11,8 @@ vim.keymap.set("n", "<leader>C", "<CMD>Huefy<CR>", { desc = "color picker" })
 
 -- Split window
 vim.keymap.set("n", "<C-q>", ":q<CR>", { desc = "Quit file" })
-vim.keymap.set("n", "<leader>h", ":split<cr>", { desc = "Split window" })
-vim.keymap.set("n", "<leader>v", ":vsplit<cr>", { desc = "Split window vertical" })
+vim.keymap.set("n", "<leader>H", ":split<cr>", { desc = "Split window" })
+vim.keymap.set("n", "<leader>V", ":vsplit<cr>", { desc = "Split window vertical" })
 
 -- Resize pane
 vim.keymap.set("n", "<leader>=", "<C-w>=", { desc = "Equal window" })

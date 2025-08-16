@@ -28,9 +28,14 @@ return {
 				{ "<leader>S", group = "Scratch list", icon = { icon = "󱥘 ", color = "green" } },
 				{ "<leader>A", group = "Windsurf Chat", icon = { icon = "󰚩 ", color = "purple" } },
 				{ "<leader>.", group = "Scratch toggle", icon = { icon = "󱥘 ", color = "green" } },
-				{ "<leader>v", group = "Split window V", icon = { icon = " ", color = "blue" } },
-				{ "<leader>h", group = "Split window H ", icon = { icon = " ", color = "blue" } },
-				{ "<leader>=", group = "Equal windows", icon = { icon = " ", color = "blue" } },
+				{ "<leader>V", group = "Split window V", icon = { icon = " ", color = "purple" } },
+				{ "<leader>H", group = "Split window H ", icon = { icon = " ", color = "purple" } },
+				{ "<leader>=", group = "Equal windows", icon = { icon = " ", color = "purple" } },
+
+				--- harpoon
+				{ "<leader>h", group = "Harpoon", icon = { icon = " ", color = "blue" } },
+				{ "<leader>ha", group = "Add", icon = { icon = " ", color = "green" } },
+				{ "<leader>hs", group = "list", icon = { icon = " ", color = "pink" } },
 				--- notify
 				{ "<leader>n", group = "Notify", icon = { icon = "󰍨 ", color = "yellow" } },
 				{ "<leader>nh", group = "History", icon = { icon = " ", color = "yellow" } },

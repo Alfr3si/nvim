@@ -67,6 +67,7 @@ This is my personal Neovim configuration, designed to be fast and efficient. Fee
 
 ## Tools 🧰
 
+- [harpoon](https://github.com/ThePrimeagen/harpoon)
 - [mini.comment](https://github.com/echasnovski/mini.comment)
 - [mini.ai](https://github.com/echasnovski/mini.ai)
 - [nvim-ts-context-commentstring](https://github.com/JoosepAlviste/nvim-ts-context-commentstring)
