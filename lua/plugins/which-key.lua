@@ -43,6 +43,9 @@ return {
 				{ "<leader>fp", group = "Projects", icon = { icon = "󰥨 ", color = "blue" } },
 				{ "<leader>fr", group = "Recent", icon = { icon = " ", color = "green" } },
 
+				--- code (using when a server lsp is atached)
+				{ "<leader>c", group = "Code", icon = { icon = " ", color = "green" } },
+
 				--- git
 				{ "<leader>g", group = "Git", icon = { icon = " ", color = "orange" } },
 				{ "<leader>gb", group = "Blame line", icon = { icon = " ", color = "orange" } },
