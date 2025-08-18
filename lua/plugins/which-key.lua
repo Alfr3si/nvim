@@ -51,6 +51,12 @@ return {
 				--- code (using when a server lsp is atached)
 				{ "<leader>c", group = "Code", icon = { icon = " ", color = "green" } },
 
+				--- live preview
+				{ "<leader>l", group = "LivePreview", icon = { icon = "󰈈 ", color = "purple" } },
+				{ "<leader>la", group = "Activate", icon = { icon = " ", color = "green" } },
+				{ "<leader>lc", group = "Close", icon = { icon = " ", color = "red" } },
+				{ "<leader>lP", group = "Picker", icon = { icon = " ", color = "yellow" } },
+
 				--- git
 				{ "<leader>g", group = "Git", icon = { icon = " ", color = "orange" } },
 				{ "<leader>gb", group = "Blame line", icon = { icon = " ", color = "orange" } },
