@@ -23,7 +23,10 @@ return {
 			},
 		},
 		config = function(_, opts)
-			require("render-markdown").setup(opts)
+			require("render-markdown").setup({
+				opts,
+				sign = { enabled = false },
+			})
 
 			local md_colors = {
 				h1_bg = "#ff6188", -- rojo/rosa (Monokai/Sonokai)
