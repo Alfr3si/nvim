@@ -11,7 +11,7 @@ return {
 		explorer = { enabled = true },
 		picker = { enabled = true },
 		notifier = { enabled = true },
-		image = { enabled = true },
+		image = require("plugins.snacks.image"),
 		statuscolumn = { enabled = true },
 		quickfile = { enabled = true },
 		gitbrowse = { enabled = true },
