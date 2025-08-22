@@ -28,9 +28,6 @@ return {
 				{ "<leader>S", group = "Scratch list", icon = { icon = "󱥘 ", color = "green" } },
 				{ "<leader>A", group = "Windsurf Chat", icon = { icon = "󰚩 ", color = "purple" } },
 				{ "<leader>.", group = "Scratch toggle", icon = { icon = "󱥘 ", color = "green" } },
-				{ "<leader>V", group = "Split window V", icon = { icon = " ", color = "purple" } },
-				{ "<leader>H", group = "Split window H ", icon = { icon = " ", color = "purple" } },
-				{ "<leader>=", group = "Equal windows", icon = { icon = " ", color = "purple" } },
 
 				--- harpoon
 				{ "<leader>h", group = "Harpoon", icon = { icon = " ", color = "blue" } },

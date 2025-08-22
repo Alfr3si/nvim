@@ -9,13 +9,10 @@ vim.keymap.set("n", "<leader>L", "<CMD>Lazy<CR>", { desc = "Lazy UI" })
 vim.keymap.set("n", "<leader>M", "<CMD>Mason<CR>", { desc = "Mason UI" })
 vim.keymap.set("n", "<leader>C", "<CMD>Huefy<CR>", { desc = "color picker" })
 
--- Split window
+-- quit
 vim.keymap.set("n", "<C-q>", ":q<CR>", { desc = "Quit file" })
-vim.keymap.set("n", "<leader>H", ":split<cr>", { desc = "Split window" })
-vim.keymap.set("n", "<leader>V", ":vsplit<cr>", { desc = "Split window vertical" })
 
 -- Resize pane
-vim.keymap.set("n", "<leader>=", "<C-w>=", { desc = "Equal window" })
 vim.keymap.set("n", "<A-h>", "<C-w>5<", { desc = "Resize window" })
 vim.keymap.set("n", "<A-l>", "<C-w>6>", { desc = "Resize window" })
 
