@@ -40,41 +40,7 @@ return {
       },
     })
 
-    -- Keymaps
-    -- movimiento
-    vim.keymap.set({"n", "x", "o"}, "]f", function()
-      move.goto_next_start("@function.outer", "textobjects")
-    end, { desc = "Siguiente funcion", silent = true })
-
-    vim.keymap.set({"n", "x", "o"}, "[f", function()
-      move.goto_previous_start("@function.outer", "textobjects")
-    end, { desc = "Funcion anterior", silent = true })
-
-    vim.keymap.set({"n", "x", "o"}, "[F", function()
-      move.goto_next_end("@function.outer", "textobjects")
-    end, { desc = "Final de la funcion", silent = true })
-
-    vim.keymap.set({"n", "x", "o"}, "]c", function()
-      move.goto_next_start("@class.outer", "textobjects")
-    end, { desc = "Siguiente clase", silent = true })
-
-    vim.keymap.set({"n", "x", "o"}, "[c", function()
-      move.goto_previous_start("@class.outer", "textobjects")
-    end, { desc = "Clase anterior", silent = true })
-
-    vim.keymap.set({"n", "x", "o"}, "[C", function()
-      move.goto_next_end("@class.outer", "textobjects")
-    end, { desc = "Final de la clase", silent = true })
-
-    vim.keymap.set({"n", "x", "o"}, "]a", function()
-      move.goto_next_start("@parameter.inner", "textobjects")
-    end, { desc = "Siguiente argumento", silent = true })
-
-    vim.keymap.set({"n", "x", "o"}, "[a", function()
-      move.goto_previous_start("@parameter.inner", "textobjects")
-    end, { desc = "Argumento anterior", silent = true })
-
-    -- seleccion
+    -- Keymaps de seleecion
     vim.keymap.set({"x", "o"}, "if", function()
       select.select_textobject("@function.inner", "textobjects")
     end, { desc = "Interior de la funcion", silent = true })

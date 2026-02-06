@@ -4,11 +4,6 @@
 
 This is my personal Neovim configuration, designed to be fast and efficient. Feel free to copy, modify, and adapt it for your own use.
 
-# Preview
-
-![image](assets/dashboard.png)
-![image2](assets/config.png)
-![image2](assets/code.png)
 
 # Plugins
 
