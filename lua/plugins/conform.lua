@@ -16,7 +16,7 @@ return {
 			})
 		end
 
-		vim.keymap.set("n", "<leader>F", format_code, { desc = "File formatt" })
-		vim.keymap.set("v", "<leader>F", format_code, { desc = "Select formatt" })
+		vim.keymap.set("n", "<leader>F", format_code, { desc = "File format" })
+		vim.keymap.set("v", "<leader>F", format_code, { desc = "Select format" })
 	end,
 }
