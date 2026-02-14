@@ -11,14 +11,7 @@ return {
 			"rafamadriz/friendly-snippets",
 			"moyiz/blink-emoji.nvim",
 			"echasnovski/mini.icons",
-			{
-				"L3MON4D3/LuaSnip",
-				version = "v2.*",
-				name = "luasnip",
-				config = function()
-					require("config.plugins.luasnip").config()
-				end,
-			},
+			"L3MON4D3/LuaSnip",
 		},
 		version = "*",
 		config = function()
@@ -42,21 +35,16 @@ return {
 						emoji = {
 							module = "blink-emoji",
 							name = "Emoji",
-							score_offset = 15, -- Tune by preference
+							score_offset = 15,
 							opts = {
-								insert = true, -- Insert emoji (default) or complete its name
+								insert = true,
 								---@type string|table|fun():table
 								trigger = function()
 									return { ":" }
 								end,
 							},
 							should_show_items = function()
-								return vim.tbl_contains(
-									-- Enable emoji completion only for git commits and markdown.
-									-- By default, enabled for all file-types.
-									{ "gitcommit", "markdown" },
-									vim.o.filetype
-								)
+								return vim.tbl_contains({ "gitcommit", "markdown" }, vim.o.filetype)
 							end,
 						},
 					},
