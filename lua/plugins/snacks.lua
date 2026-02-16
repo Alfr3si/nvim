@@ -1,7 +1,7 @@
 ---@diagnostic disable : undefined-global
 
 local dashboard = {
-  enable = true,
+  enabled = true,
   preset = {
     header = [[
 ███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗
@@ -55,7 +55,7 @@ return {
     scroll = { enabled = true },
     statuscolumn = { enabled = true },
     words = { enabled = true },
-
+    image = { enabled = true },
   },
   keys = {
     { "<leader><space>", function() Snacks.picker.smart() end, desc = "Smart Find Files" },

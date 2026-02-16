@@ -22,6 +22,7 @@ return {
       "markdown",
       "diff",
       "json",
+      "latex",
     }
 
     ts.install(lenguajes)

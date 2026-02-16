@@ -68,7 +68,7 @@ return {
 					menu = {
 						border = "none",
 						scrolloff = 1,
-						scrollbar = false,
+						scrollbar = true,
 						draw = {
 							columns = {
 								{ "kind_icon" },
