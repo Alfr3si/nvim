@@ -15,10 +15,10 @@ return {
         map_keys = true,
         accept_fallback = nil,
         key_bindings = {
-          accept = "<Tab>",
-          accept_word = false,
-          accept_line = false,
-          clear = false,
+          accept = "<A-y>",
+          accept_word = "<A-w>",
+          accept_line = "<A-l>",
+          clear = "<A-c>",
           next = "<A-]>",
           prev = "<A-[>",
         }

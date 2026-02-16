@@ -5,6 +5,7 @@ return {
 			formatters_by_ft = {
 				lua = { "stylua" },
 				javascript = { "prettierd" },
+        markdown = { "prettierd" },
 			},
 			format_on_save = false, -- formatear al guardar
 		})

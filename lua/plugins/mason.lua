@@ -38,6 +38,7 @@ return {
       mason_tool.setup({
         ensure_installed = {
           "stylua", -- formatter de lua
+          "prettierd",
         },
         auto_update = true,
         run_on_start = true,

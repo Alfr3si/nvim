@@ -5,3 +5,4 @@ vim.o.expandtab = true
 vim.opt.conceallevel = 2
 vim.wo.number = false
 vim.wo.relativenumber = false
+vim.opt.textwidth = 100

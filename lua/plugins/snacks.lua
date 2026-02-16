@@ -55,7 +55,7 @@ return {
     scroll = { enabled = true },
     statuscolumn = { enabled = true },
     words = { enabled = true },
-    image = { enabled = true },
+    image = { enabled = false },
   },
   keys = {
     { "<leader><space>", function() Snacks.picker.smart() end, desc = "Smart Find Files" },

@@ -24,17 +24,33 @@ return {
 		require("obsidian").setup({
 			picker = { name = "snacks.pick" },
 			legacy_commands = false,
+      preferred_link_style = "markdown",
 			workspaces = vaults,
-			notes_subdir = "temp",
-      new_notes_location = "notes_subdir",
 			completion = {
 				nvim_cmp = false,
         blink = true,
 			},
-			attachments = {
-				folder = "assets/imgs",
-			},
 			ui = { enable = false },
+
+			notes_subdir = "00-Inbox",
+      new_notes_location = "notes_subdir",
+			attachments = {
+				folder = "00-Inbox/img",
+			},
+
+      daily_notes = {
+        folder = "04-Daily",
+        date_format = "%Y-%m-%d",
+        alias_format = "%B %-d, %Y",
+        default_tags = { "daily-notes" },
+        template = nil,
+      },
+      templates = {
+        subdir = "99-Templates",
+        date_format = "%Y-%m-%d-%a",
+        gtime_format = "%H:%M",
+        tags = "",
+      },
 		})
 	end,
 }
