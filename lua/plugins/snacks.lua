@@ -10,25 +10,26 @@ local dashboard = {
 ██║╚██╗██║██╔══╝  ██║   ██║╚██╗ ██╔╝██║██║╚██╔╝██║
 ██║ ╚████║███████╗╚██████╔╝ ╚████╔╝ ██║██║ ╚═╝ ██║
 ╚═╝  ╚═══╝╚══════╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝]],
+
+    keys = {
+      { icon = " ", key = "f", desc = "Find File", action = ":lua Snacks.dashboard.pick('files')" },
+      { icon = " ", key = "n", desc = "New File", action = ":ene | startinsert" },
+      { icon = " ", key = "g", desc = "Find Text", action = ":lua Snacks.dashboard.pick('live_grep')" },
+      { icon = " ", key = "r", desc = "Recent Files", action = ":lua Snacks.dashboard.pick('oldfiles')" },
+      {
+        icon = " ",
+        key = "p",
+        desc = "Plugins",
+        action = ":lua Snacks.dashboard.pick('files', {cwd = vim.fn.stdpath('config') .. '/lua/plugins'})",
+      },
+      { icon = "󰒲 ", key = "l", desc = "Lazy", action = ":Lazy" },
+      { icon = " ", key = "q", desc = "Quit", action = ":qa" },
+    },
   },
   formats = {
     key = function(item)
-      return { { "[", hl = "special"}, {item.key, hl = "key"}, { "]", hl = "special" } }
+	return { { "[", hl = "special" }, { item.key, hl = "key" }, { "]", hl = "special" } }
     end
-  },
-  keys = {
-		{ icon = " ", key = "[f]", desc = "Find File", action = ":lua Snacks.dashboard.pick('files')" },
-		{ icon = " ", key = "[n]", desc = "New File", action = ":ene | startinsert" },
-		{ icon = " ", key = "[g]", desc = "Find Text", action = ":lua Snacks.dashboard.pick('live_grep')" },
-		{ icon = " ", key = "[r]", desc = "Recent Files", action = ":lua Snacks.dashboard.pick('oldfiles')" },
-		{
-			icon = " ",
-			key = "[c]",
-			desc = "Config",
-			action = ":lua Snacks.dashboard.pick('files', {cwd = vim.fn.stdpath('config')})",
-		},
-		{ icon = "󰒲 ", key = "[l]", desc = "Lazy", action = ":Lazy" },
-		{ icon = " ", key = "[q]", desc = "Quit", action = ":qa" },
   },
 	sections = {
 		{ section = "header" },
@@ -121,5 +122,8 @@ return {
         Snacks.toggle.option("relativenumber", { name = "Relative Number" }):map("<leader>uL")
       end,
     })
+    vim.api.nvim_create_user_command("Dashboard", function()
+      Snacks.dashboard.open()
+    end, { desc = "Open dashboard" })
   end
 }
