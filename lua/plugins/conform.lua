@@ -4,8 +4,14 @@ return {
 		require("conform").setup({
 			formatters_by_ft = {
 				lua = { "stylua" },
+				html = { "prettierd" },
+				css = { "prettierd" },
+				scss = { "prettierd" },
 				javascript = { "prettierd" },
+				typescript = { "prettierd" },
+				php = { "prettierd" },
         markdown = { "prettierd" },
+        json = { "prettierd" },
 			},
 			format_on_save = false, -- formatear al guardar
 		})

@@ -1,6 +1,6 @@
 return {
 	"windwp/nvim-ts-autotag",
-	ft = { "html", "php", "markdown", "xml", "javascript", "tailwindcss" },
+	ft = { "html", "php", "markdown", "xml", "javascript", "typescript", "jsx", "tsx" },
 	dependencies = { "nvim-treesitter/nvim-treesitter" },
 	config = function()
 		local ts_a = require("nvim-ts-autotag")

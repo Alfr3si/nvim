@@ -29,7 +29,7 @@ This is my personal Neovim configuration, designed to be fast and efficient.
 - [mason](https://github.com/mason-org/mason.nvim)
 - [minty](https://github.com/nvzone/minty)
 - [obsidian](https://github.com/epwalsh/obsidian.nvim)
-- [marker-groups](https://github.com/jameswolensky/marker-groups.nvim)
+- [todo-comments](https://github.com/folke/todo-comments.nvim)
 - [which-key](https://github.com/folke/which-key.nvim)
 - [obsidian](https://github.com/obsidian-nvim/obsidian.nvim)
 - [treesitter](https://github.com/nvim-treesitter/nvim-treesitter)

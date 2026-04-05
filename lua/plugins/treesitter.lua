@@ -1,6 +1,8 @@
 return {
   "nvim-treesitter/nvim-treesitter",
   lazy = false,
+  branch = "main",
+  commit = vim.fn.has("nvim-0.12") == 0 and "7caec274fd19c12b55902a5b795100d21531391f" or nil,
   version = false,
   build = ":TSUpdate",
   dependencies = {
@@ -10,25 +12,29 @@ return {
 
     local ts = require("nvim-treesitter")
     local ts_to = require("nvim-treesitter-textobjects")
-    local move = require("nvim-treesitter-textobjects.move")
     local select = require("nvim-treesitter-textobjects.select")
 
-    local lenguajes = {
+    local languages = {
       "lua",
       "html",
       "css",
       "php",
       "javascript",
+      "jsx",
+      "typescript",
+      "tsx",
       "markdown",
       "diff",
       "json",
       "latex",
     }
 
-    ts.install(lenguajes)
+    for _, language in ipairs(languages) do
+      ts.install(language)
+    end
 
     vim.api.nvim_create_autocmd("FileType", {
-      pattern = lenguajes,
+      pattern = languages,
       callback = function()
         vim.treesitter.start()
       end
