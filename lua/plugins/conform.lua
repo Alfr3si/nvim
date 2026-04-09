@@ -9,7 +9,7 @@ return {
 				scss = { "prettierd" },
 				javascript = { "prettierd" },
 				typescript = { "prettierd" },
-				php = { "prettierd" },
+				php = { "php-cs-fixer" },
         markdown = { "prettierd" },
         json = { "prettierd" },
 			},

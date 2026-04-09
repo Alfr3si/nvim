@@ -56,6 +56,8 @@ return {
       "vtsls",
       "html",
       "tailwindcss",
+      "phpactor",
+      "intelephense",
     }
 
     for _, server in ipairs(servers) do

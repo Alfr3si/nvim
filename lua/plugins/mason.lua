@@ -30,6 +30,8 @@ return {
           "html",
           "cssls",
           "lua_ls",
+          "phpactor",
+          "intelephense",
         },
         automatic_installation = true,
       })
@@ -38,6 +40,7 @@ return {
         ensure_installed = {
           "stylua", -- formatter de lua
           "prettierd",
+          "php-cs-fixer",
         },
         auto_update = true,
         run_on_start = true,
