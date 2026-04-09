@@ -27,7 +27,6 @@ return {
         ensure_installed = {
           "vtsls",
           "tailwindcss",
-          "eslint",
           "html",
           "cssls",
           "lua_ls",

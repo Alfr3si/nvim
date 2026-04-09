@@ -51,7 +51,11 @@ return {
     end
 
     local servers = {
-      "lua_ls"
+      "lua_ls",
+      "cssls",
+      "vtsls",
+      "html",
+      "tailwindcss",
     }
 
     for _, server in ipairs(servers) do
