@@ -7,7 +7,6 @@ return {
     },
     ft = { "markdown" },
     opts = {
-      -- 1. Configuraciones Globales (Aplican a MD y Org)
       code = {
         sign = false,
         width = "block",
@@ -23,7 +22,6 @@ return {
         right_pad = 1,
       },
       heading = {
-        -- Estos iconos se usarán para Markdown
         icons = { "󰲡 ", "󰲣 ", "󰲥 ", "󰲧 ", "󰲩 ", "󰲫 " },
       },
 

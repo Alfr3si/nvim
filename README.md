@@ -28,7 +28,7 @@ This is my personal Neovim configuration, designed to be fast and efficient.
 - [live-preview](https://github.com/brianhuster/live-preview.nvim)
 - [mason](https://github.com/mason-org/mason.nvim)
 - [minty](https://github.com/nvzone/minty)
-- [obsidian](https://github.com/epwalsh/obsidian.nvim)
+- [markdown-agenda](https://github.com/Kamyil/markdown-agenda.nvim)
 - [todo-comments](https://github.com/folke/todo-comments.nvim)
 - [which-key](https://github.com/folke/which-key.nvim)
 - [obsidian](https://github.com/obsidian-nvim/obsidian.nvim)
