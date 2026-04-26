@@ -1,11 +1,7 @@
 local vaults = {
-	{
-		name = "Universidad",
-		path = os.getenv("HOME") .. "/.Obsidian/Universidad",
-	},
   {
-    name = "Personal",
-    path = os.getenv("HOME") .. "/.Obsidian/Personal",
+    name = "Vault",
+    path = os.getenv("HOME") .. "/.Obsidian/Vault",
   },
 }
 
