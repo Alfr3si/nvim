@@ -26,7 +26,6 @@ return {
       "markdown",
       "diff",
       "json",
-      "latex",
     }
 
     for _, language in ipairs(languages) do
