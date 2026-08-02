@@ -64,12 +64,6 @@ return {
     { "<leader>/", function() Snacks.picker.grep() end, desc = "Grep" },
     { "<leader>:", function() Snacks.picker.command_history() end, desc = "Command History" },
     { "<leader>e", function() Snacks.explorer() end, desc = "File Explorer" },
-    --find
-    { "<leader>ff", function() Snacks.picker.files() end, desc = "Find Files" },
-    { "<leader>fc", function() Snacks.picker.files({cwd = vim.fn.stdpath("config")}) end, desc = "Configs nvim" },
-    { "<leader>fg", function() Snacks.picker.git_files() end, desc = "Find Git Files" },
-    { "<leader>fp", function() Snacks.picker.projects() end, desc = "Projects" },
-    { "<leader>fr", function() Snacks.picker.recent() end, desc = "Recent" },
     --git
     { "<leader>gb", function() Snacks.picker.git_branches() end, desc = "Git Branches" },
     { "<leader>gl", function() Snacks.picker.git_log() end, desc = "Git Log" },
@@ -103,6 +97,13 @@ return {
     { "<leader>sM", function() Snacks.picker.man() end, desc = "Man Pages" },
     { "<leader>su", function() Snacks.picker.undo() end, desc = "Undo History" },
     { "<leader>sn", function() Snacks.picker.notifications() end, desc = "Notification History" },
+    --find
+    { "<leader>sf", function() Snacks.picker.files() end, desc = "Find Files" },
+    { "<leader>sc", function() Snacks.picker.files({cwd = vim.fn.stdpath("config")}) end, desc = "Configs nvim" },
+    { "<leader>sg", function() Snacks.picker.git_files() end, desc = "Find Git Files" },
+    { "<leader>sp", function() Snacks.picker.projects() end, desc = "Projects" },
+    { "<leader>sr", function() Snacks.picker.recent() end, desc = "Recent" },
+
     --other
     { "<leader>.",  function() Snacks.scratch() end, desc = "Toggle Scratch Buffer" },
     { "<leader>S",  function() Snacks.scratch.select() end, desc = "Select Scratch Buffer" },
