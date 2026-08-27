@@ -43,8 +43,9 @@ return {
       enter_note = function(note)
         if not note then return end
         -- Setup keymaps for obsidian notes
+        -- Solución para 'gf': usar el comando interno de obsidian o vim.cmd
         vim.keymap.set("n", "gf", function()
-          return require("obsidian").util.gf_passthrough()
+          return ":Obsidian follow_link<CR>"
         end, { buffer = note.bufnr, expr = true, desc = "Obsidian follow link" })
 
         vim.keymap.set("n", "<leader>ot", function()
