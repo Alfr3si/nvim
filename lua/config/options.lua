@@ -28,3 +28,7 @@ vim.opt.clipboard = "unnamedplus"
 vim.opt.cursorline = true
 vim.opt.conceallevel = 1
 vim.opt.foldenable = true
+
+--Compilador de C gcc (para que solo use este)
+vim.env.CC = "gcc"
+
