@@ -44,7 +44,7 @@ return {
     },
     picker = {
       -- Set your preferred picker. Can be one of 'telescope.nvim', 'fzf-lua', 'mini.pick' or 'snacks.pick'.
-      name = "snacks.pick",
+      name = "snacks.picker",
     },
     -- Opciones: "wiki" (ej: [[Nota]]) o "markdown" (ej: [Nota](Nota.md))
     link_style = "wiki",
