@@ -17,8 +17,21 @@ return {
     legacy_commands = false,
     workspaces = {
       {
-        name = "obsidian", -- Name of the workspace
-        path = os.getenv("HOME") .. "/Documents/obsidian", -- Path to the notes directory
+        -- name = "obsidian", -- Name of the workspace
+        -- path = os.getenv("HOME") .. "/Documents/obsidian", -- Path to the notes directory
+        --
+        -- Detección automática de ruta multiplataforma (Linux / Windows)
+
+        name = "obsidian",
+        path = (function()
+          if vim.fn.has("win32") == 1 then
+            -- Ruta típica en Windows usando USERPROFILE
+            return os.getenv("USERPROFILE") .. "/Documents/obsidian"
+          else
+            -- Ruta típica en Linux/macOS usando HOME
+            return os.getenv("HOME") .. "/Documents/obsidian"
+          end
+        end)(),
       },
     },
     notes_subdir = "00-Inbox",
